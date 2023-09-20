@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <style>
+        body {
+          background-image: url('{% static 'image/artbg.jpg' %}');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        h1 {
+            text-align: center;
+            font-size: 70px;
+        }
+        #about {
+            background-color: #e5c7ca;
+            text-align: center;
+            font-size: 25px;
+            padding: 30px;
+        }
+        #artwork {
+            background-color: #9eeaf9;
+            text-align: center;
+            font-size: 30px;
+            padding: 30px;
+        }
+        #links {
+            background-color: #e5c7ca;
+            text-align: center;
+            font-size: 25px;
+            padding: 30px;
+        }
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+        .column2 {
+            float: left;
+            width: 50%;
+            padding: 20px;
+        }
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Onaire Layug Portfolio</title>
+</head>
+
+<br>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Onaire Layug</h1>
+    <p style="text-align: center; font-size: 35px; color: #666666">Digital Artist</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="about">
+        <h2>
+            About me:
+        </h2>
+        <p>
+            I am a digital artist with a mostly anime inspired artstyle. I mainly use MediBang Paint Pro as my art software.<br>
+            I started this as a hobby 11 years ago, which in turn has enabled me to be quick and efficient in creating artworks.
+        </p>
+    </section>
+    <section id="artwork">
+           <p><u>Artworks</u></p>
+        <br>
+        <div class="row">
+            <div class="column">
+                <img src="{% static 'image/pur.png' %}" width="375" height="500">
+            </div>
+            <div class="column">
+                <img src="{% static 'image/bub.png' %}" width="375" height="500">
+            </div>
+            <div class="column">
+                <img src="{% static 'image/dar.png' %}" width="375" height="500">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="column2">
+                <img src="{% static 'image/sar.png' %}" width="375" height="500">
+            </div>
+            <div class="column2">
+                <img src="{% static 'image/owr.png' %}" width="375" height="500">
+            </div>
+        </div>
+    </section>
+    <section id="links">
+        <p>Links:</p>
+        <a target="_blank" href="https://www.facebook.com/yehnree/">Facebook</a> <a target="_blank" href="https://www.instagram.com/_yehnree/">Instagram</a>
+        <br>
+        <br>
+        <p>Email me:</p>
+        <a target="_blank" href="mailto:layugnaenae@gmail.com">layugnaenae@gmail.com</a>
+    </section>
+ </body>
+
+    <script src="{% static 'js/bootsrap.js' %}"></script>
+
+</html>
